@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title></title>
+  <link rel="icon" href="img/mdb-favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/mdb.min.css">
+  <link rel="stylesheet" href="fonts/kanit/css/fonts.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-12 col-md-12 col-lg-6">
+        <div id="containerPaln" class="containerPaln">
+          <div class="sectionTime">
+            <div class="tabTime">
+              00:00
+            </div>
+            <div class="tabListPlan" ondrop="drop(event)" ondragover="allowDrop(event)">
+              <div id="user_1232143" class="cardPlan" draggable="true" ondragstart="drag(event)">
+                <div class="divTxtCard">
+                  <p class="txtRoom">ห้อง 9201/1</p>
+                  <p class="txtName">เจนนภา สุวรรณมณี</p>
+                </div>
+                <div class="boxImage">
+                  <img src="./img/mockup/user.png">
+                </div>
+              </div>
+              <div id="user_1232145" class="cardPlan" draggable="true" ondragstart="drag(event)">
+                <div class="divTxtCard">
+                  <p class="txtRoom">ห้อง 9201/1</p>
+                  <p class="txtName">เจนนภา สุวรรณมณี</p>
+                </div>
+                <div class="boxImage">
+                  <img src="./img/mockup/user.png">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="sectionTime">
+            <div class="tabTime">
+              01:00
+            </div>
+            <div class="tabListPlan" ondrop="drop(event)" ondragover="allowDrop(event)">
+              <!-- <div class="cardPlan freetime">
+                <div class="divTxtCard">
+                  <p class="txtRoom">ว่าง</p>
+                </div>
+                <div class="boxImage">
+                  <img src="./img/icons/freetimeicon.jpg">
+                </div>
+              </div> -->
+            </div>
+          </div>
+          <div class="sectionTime">
+            <div class="tabTime">
+              02:00
+            </div>
+            <div class="tabListPlan" ondrop="drop(event)" ondragover="allowDrop(event)">
+              <!-- <div class="cardPlan freetime">
+                <div class="divTxtCard">
+                  <p class="txtRoom">ว่าง</p>
+                </div>
+                <div class="boxImage">
+                  <img src="./img/icons/freetimeicon.jpg">
+                </div>
+              </div> -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <script type="text/javascript" src="js/jquery.min.js"></script>
+  <script type="text/javascript" src="js/popper.min.js"></script>
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="js/mdb.min.js"></script>
+  <script>
+    function allowDrop(ev) {
+      ev.preventDefault();
+    }
+
+    function drag(ev) {
+      ev.dataTransfer.setData("text", ev.target.id);
+    }
+
+    function drop(ev) {
+      ev.preventDefault();
+      var data = ev.dataTransfer.getData("text");
+      //ev.target.appendChild(document.getElementById(data));
+      //console.log(ev.target);
+      //ev.target.find(".tabListPlan").append(document.getElementById(data));
+      var g = ev.target;
+      g.closest('.tabListPlan').appendChild(document.getElementById(data));
+    }
+  </script>
+
+</body>
+
+</html>
