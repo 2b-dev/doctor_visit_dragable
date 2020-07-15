@@ -3,6 +3,9 @@
 }
 .containerPaln {
   width: 100%;
+  height: 100vh;
+  -webkit-overflow-scrolling: touch;
+  overflow: auto;
 }
 .sectionTime {
   width: 100%;
@@ -12,6 +15,7 @@
   justify-content: flex-start;
   align-items: flex-start;
   margin-top: 10px;
+  height: auto;
 }
 .sectionTime .tabTime {
   width: 90px;
@@ -70,4 +74,31 @@
   max-width: 100%;
   min-width: 60px;
   min-height: 60px;
+}
+
+.mb-special {
+  margin-bottom: 80px;
+}
+.areabin {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 60px;
+  width: 100%;
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.areabin.show_bin {
+  display: flex;
+  background-color: rgba(255, 0, 0, 0.5);
+}
+.areabin.show_bin.in {
+  background-color: #ff0000;
+}
+.areabin img {
+  width: auto;
+  height: 80%;
 }

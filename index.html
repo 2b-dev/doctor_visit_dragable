@@ -10,20 +10,21 @@
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/mdb.min.css">
   <link rel="stylesheet" href="fonts/kanit/css/fonts.css">
+  <link rel="stylesheet" href="./node_modules/mobile-drag-drop/default.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
   <div class="container">
-    <div class="row justify-content-center">
+    <div class="row justify-content-center mb-special">
       <div class="col-12 col-md-12 col-lg-6">
         <div id="containerPaln" class="containerPaln">
           <div class="sectionTime">
             <div class="tabTime">
               00:00
             </div>
-            <div class="tabListPlan" ondrop="drop(event)" ondragover="allowDrop(event)">
-              <div id="user_1232143" class="cardPlan" draggable="true" ondragstart="drag(event)">
+            <div class="tabListPlan canDrop">
+              <div id="user_1232143" class="cardPlan dragableCard">
                 <div class="divTxtCard">
                   <p class="txtRoom">ห้อง 9201/1</p>
                   <p class="txtName">เจนนภา สุวรรณมณี</p>
@@ -32,7 +33,7 @@
                   <img src="./img/mockup/user.png">
                 </div>
               </div>
-              <div id="user_1232145" class="cardPlan" draggable="true" ondragstart="drag(event)">
+              <div id="user_1232145" class="cardPlan dragableCard">
                 <div class="divTxtCard">
                   <p class="txtRoom">ห้อง 9201/1</p>
                   <p class="txtName">เจนนภา สุวรรณมณี</p>
@@ -47,7 +48,32 @@
             <div class="tabTime">
               01:00
             </div>
-            <div class="tabListPlan" ondrop="drop(event)" ondragover="allowDrop(event)">
+            <div class="tabListPlan canDrop">
+              <div id="user_12321431233" class="cardPlan dragableCard">
+                <div class="divTxtCard">
+                  <p class="txtRoom">ห้อง 9201/1</p>
+                  <p class="txtName">เจนนภา สุวรรณมณี</p>
+                </div>
+                <div class="boxImage">
+                  <img src="./img/mockup/user.png">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="sectionTime">
+            <div class="tabTime">
+              02:00
+            </div>
+            <div class="tabListPlan canDrop">
+              <div id="user_123214wfwa3" class="cardPlan dragableCard">
+                <div class="divTxtCard">
+                  <p class="txtRoom">ห้อง 9201/1</p>
+                  <p class="txtName">เจนนภา สุวรรณมณี</p>
+                </div>
+                <div class="boxImage">
+                  <img src="./img/mockup/user.png">
+                </div>
+              </div>
               <!-- <div class="cardPlan freetime">
                 <div class="divTxtCard">
                   <p class="txtRoom">ว่าง</p>
@@ -60,9 +86,162 @@
           </div>
           <div class="sectionTime">
             <div class="tabTime">
-              02:00
+              03:00
             </div>
-            <div class="tabListPlan" ondrop="drop(event)" ondragover="allowDrop(event)">
+            <div class="tabListPlan canDrop">
+              <div id="user_1232aaa14wfwa3" class="cardPlan dragableCard">
+                <div class="divTxtCard">
+                  <p class="txtRoom">ห้อง 9201/1</p>
+                  <p class="txtName">เจนนภา สุวรรณมณี</p>
+                </div>
+                <div class="boxImage">
+                  <img src="./img/mockup/user.png">
+                </div>
+              </div>
+              <!-- <div class="cardPlan freetime">
+                <div class="divTxtCard">
+                  <p class="txtRoom">ว่าง</p>
+                </div>
+                <div class="boxImage">
+                  <img src="./img/icons/freetimeicon.jpg">
+                </div>
+              </div> -->
+            </div>
+          </div>
+          <div class="sectionTime">
+            <div class="tabTime">
+              04:00
+            </div>
+            <div class="tabListPlan canDrop">
+              <div id="user_12faweq3214wfwa3" class="cardPlan dragableCard">
+                <div class="divTxtCard">
+                  <p class="txtRoom">ห้อง 9201/1</p>
+                  <p class="txtName">เจนนภา สุวรรณมณี</p>
+                </div>
+                <div class="boxImage">
+                  <img src="./img/mockup/user.png">
+                </div>
+              </div>
+              <!-- <div class="cardPlan freetime">
+                <div class="divTxtCard">
+                  <p class="txtRoom">ว่าง</p>
+                </div>
+                <div class="boxImage">
+                  <img src="./img/icons/freetimeicon.jpg">
+                </div>
+              </div> -->
+            </div>
+          </div>
+          <div class="sectionTime">
+            <div class="tabTime">
+              05:00
+            </div>
+            <div class="tabListPlan canDrop">
+              <div id="user_1fwafe23214wfwa3" class="cardPlan dragableCard">
+                <div class="divTxtCard">
+                  <p class="txtRoom">ห้อง 9201/1</p>
+                  <p class="txtName">เจนนภา สุวรรณมณี</p>
+                </div>
+                <div class="boxImage">
+                  <img src="./img/mockup/user.png">
+                </div>
+              </div>
+              <!-- <div class="cardPlan freetime">
+                <div class="divTxtCard">
+                  <p class="txtRoom">ว่าง</p>
+                </div>
+                <div class="boxImage">
+                  <img src="./img/icons/freetimeicon.jpg">
+                </div>
+              </div> -->
+            </div>
+          </div>
+          <div class="sectionTime">
+            <div class="tabTime">
+              06:00
+            </div>
+            <div class="tabListPlan canDrop">
+              <div id="user_123214wfwafawsfwa3" class="cardPlan dragableCard">
+                <div class="divTxtCard">
+                  <p class="txtRoom">ห้อง 9201/1</p>
+                  <p class="txtName">เจนนภา สุวรรณมณี</p>
+                </div>
+                <div class="boxImage">
+                  <img src="./img/mockup/user.png">
+                </div>
+              </div>
+              <!-- <div class="cardPlan freetime">
+                <div class="divTxtCard">
+                  <p class="txtRoom">ว่าง</p>
+                </div>
+                <div class="boxImage">
+                  <img src="./img/icons/freetimeicon.jpg">
+                </div>
+              </div> -->
+            </div>
+          </div>
+          <div class="sectionTime">
+            <div class="tabTime">
+              07:00
+            </div>
+            <div class="tabListPlan canDrop">
+              <div id="user_123214cccwfwafawsfwa3" class="cardPlan dragableCard">
+                <div class="divTxtCard">
+                  <p class="txtRoom">ห้อง 9201/1</p>
+                  <p class="txtName">เจนนภา สุวรรณมณี</p>
+                </div>
+                <div class="boxImage">
+                  <img src="./img/mockup/user.png">
+                </div>
+              </div>
+              <!-- <div class="cardPlan freetime">
+                <div class="divTxtCard">
+                  <p class="txtRoom">ว่าง</p>
+                </div>
+                <div class="boxImage">
+                  <img src="./img/icons/freetimeicon.jpg">
+                </div>
+              </div> -->
+            </div>
+          </div>
+          <div class="sectionTime">
+            <div class="tabTime">
+              08:00
+            </div>
+            <div class="tabListPlan canDrop">
+              <div id="user_123adaw214wfwafawsfwa3" class="cardPlan dragableCard">
+                <div class="divTxtCard">
+                  <p class="txtRoom">ห้อง 9201/1</p>
+                  <p class="txtName">เจนนภา สุวรรณมณี</p>
+                </div>
+                <div class="boxImage">
+                  <img src="./img/mockup/user.png">
+                </div>
+              </div>
+              <!-- <div class="cardPlan freetime">
+                <div class="divTxtCard">
+                  <p class="txtRoom">ว่าง</p>
+                </div>
+                <div class="boxImage">
+                  <img src="./img/icons/freetimeicon.jpg">
+                </div>
+              </div> -->
+            </div>
+          </div>
+          <div class="sectionTime">
+            <div class="tabTime">
+              09:00
+            </div>
+            <div class="tabListPlan canDrop">
+              <div id="user_1232dfew14wfwafawsfwa3" class="cardPlan dragableCard">
+                <div class="divTxtCard">
+                  <p class="txtRoom">ห้อง 9201/1</p>
+                  <p class="txtName">เจนนภา สุวรรณมณี</p>
+                </div>
+                <div class="boxImage">
+                  <img src="./img/mockup/user.png">
+                </div>
+              </div>
               <!-- <div class="cardPlan freetime">
                 <div class="divTxtCard">
                   <p class="txtRoom">ว่าง</p>
@@ -76,6 +255,9 @@
         </div>
       </div>
     </div>
+    <div id="bin" class="areabin">
+      <img src="./img/icons/trash.png">
+    </div>
   </div>
 
 
@@ -83,24 +265,31 @@
   <script type="text/javascript" src="js/popper.min.js"></script>
   <script type="text/javascript" src="js/bootstrap.min.js"></script>
   <script type="text/javascript" src="js/mdb.min.js"></script>
+  <script type="text/javascript" src="node_modules/mobile-drag-drop/index.min.js"></script>
+  <script type="text/javascript" src="node_modules/mobile-drag-drop/scroll-behaviour.js"></script>
+  <script type="text/javascript" src="node_modules/sweetalert2/dist/sweetalert2.all.min.js"></script>
+  <script type="text/javascript" src="js/main.js"></script>
   <script>
-    function allowDrop(ev) {
-      ev.preventDefault();
-    }
+    // function allowDrop(ev) {
+    //   ev.preventDefault();
+    // }
 
-    function drag(ev) {
-      ev.dataTransfer.setData("text", ev.target.id);
-    }
+    // function drag(ev) {
+    //   ev.dataTransfer.setData("text", ev.target.id);
+    // }
 
-    function drop(ev) {
-      ev.preventDefault();
-      var data = ev.dataTransfer.getData("text");
-      //ev.target.appendChild(document.getElementById(data));
-      //console.log(ev.target);
-      //ev.target.find(".tabListPlan").append(document.getElementById(data));
-      var g = ev.target;
-      g.closest('.tabListPlan').appendChild(document.getElementById(data));
-    }
+    // function drop(ev) {
+    //   ev.preventDefault();
+    //   var data = ev.dataTransfer.getData("text");
+    //   //ev.target.appendChild(document.getElementById(data));
+    //   //console.log(ev.target);
+    //   //ev.target.find(".tabListPlan").append(document.getElementById(data));
+    //   var g = ev.target;
+    //   g.closest('.tabListPlan').appendChild(document.getElementById(data));
+    // }
+
+    
+
   </script>
 
 </body>
